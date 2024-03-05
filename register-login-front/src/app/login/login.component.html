@@ -1,0 +1,21 @@
+<div class="registration-container">
+    <h2>Login Here</h2>
+    <form>
+      
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Email Address" [(ngModel)]="email"  [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password" [(ngModel)]="password"  [ngModelOptions]="{standalone: true}">
+      </div>
+      
+      <button type="submit" class="login-btn" (click)="login()" >Login </button>
+     
+      <div class="register-link">
+        <a [routerLink]="['/register']">register</a>
+      </div>
+    </form>
+  </div>
+  
